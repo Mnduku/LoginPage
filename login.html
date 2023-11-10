@@ -8,11 +8,8 @@
 </head>
 <body style= "margin:0">
         <div class="halves" id = "h1">
-            <img id = sideimg src="images/banner2.jpg">
-                <a id = copy><em>Created by https://github.com/Mnduku for the Odin project 2023</em></a>
-        </img>
-            <img id = layered/>
-            
+            <img id = layered src ="images/logo.png"/>
+            <a id = "copy"><em>Created by https://github.com/Mnduku for the Odin project 2023</em></a>
         </div>
         <div class="halves" id = "h2">
         <p id = "tx"><strong>Anime talk is a vast forum catered to only the most devoted of fans to Discuss your favorite shows
@@ -20,9 +17,33 @@
                 simulate battles between characters regardless of their universe, and come out with the winner based on all their documented
                 feats. </p>
         <p id = "tx"><strong>Only for the most <em>devoted</em> of anime fans</strong></p>
-        <form action=""></form>
-        <button type="submit" id ="button"></button>
-        <p>Already have an account? </p><a href="">Log in</a>
+        
+        <form action="#" method = "get" id ="orm"  onsubmit="return validateForm()">
+            <fieldset>
+            <legend>Lets do this!</legend>
+            <ul id = "formlist">
+            
+            <label  for = "firstname">*First Name</label>
+            <input type = "text" id = "firstname"  required>
+            <label for = "lastname">Last Name</label>
+            <input type = "text" id = "lastname"  required>
+            <label for = "email" required>*Email</label>
+            <input type = "email" id = "email" required>
+            <label  for = "Password">*Password</label>
+            <input type = "password" id = "Password"  maxlength = "12" minlength = "4" required>
+            <label>*Phone Number</label>
+            <input type = "tel" id = "Phonenumber" for = "Phonenumber" pattern="^\d{9}"  placeholder="EX: 0123456789" required/>
+            <label >*Confirm Password </label>
+            <input type = "password" id = "cassword" required for = "cassword" maxlength = "12" minlength = "4">
+            </ul>
+            <button type="submit" id = "button" onclick="validation()">Submit</button>
+            <script>
+        
+                
+            </script>
+            </fieldset>
+        </form>
+        <p id = "login">Already have an account? </p><a  id = "login" href="">Log in</a>
         </div>
 
 <script src="login.js"></script>
