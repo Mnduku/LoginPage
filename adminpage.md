@@ -1,3 +1,3 @@
 layout: page
 title: "adminpage"
-permalink: /URL-PATH
+permalink: /login.html
